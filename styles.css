@@ -1,0 +1,297 @@
+/* Farbpalette: Weiß, #065b65, #cd6a54, #f5e5c8 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('logo.png') no-repeat center center fixed; /* Bild hinzufügen */
+    background-size: cover; /* Das Bild skaliert sich automatisch */
+    color: #2c3e50; /* Standardfarbe für Text */
+}
+
+
+header {
+    background-color: #065b65; /* Dunkles Türkis */
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #cd6a54; /* Sanftes Orange */
+}
+
+#intro {
+    background: url('intro-bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.intro-content h2 {
+    color: #cd6a54; /* Sanftes Orange für "Willkommen bei Berndorf MC" */
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #065b65; /* Dunkles Türkis */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #cd6a54; /* Sanftes Orange */
+}
+
+section {
+    padding: 50px 25px;
+    text-align: center;
+}
+
+section h2 {
+    color: #065b65; /* Dunkles Türkis */
+}
+
+#about p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.member {
+    max-width: 200px;
+}
+
+footer {
+    background-color: #065b65; /* Dunkles Türkis */
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#intro .cta-btn {
+    background-color: #cd6a54; /* Sanftes Orange für den CTA-Button "Mehr erfahren" */
+}
+
+#intro .cta-btn:hover {
+    background-color: #065b65; /* Dunkles Türkis beim Hover */
+}
+#bewerben, #whatsapp, #wiki, #contact {
+    padding: 50px 25px;
+    background-color: #f5e5c8; /* Heller Beigeton */
+    text-align: center;
+}
+
+#bewerben h2, #whatsapp h2, #wiki h2 {
+    color: #065b65; /* Dunkles Türkis */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#bewerben p, #whatsapp p, #wiki p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+#bewerben .cta-btn, #whatsapp .cta-btn, #wiki .cta-btn {
+    display: inline-block;
+    background-color: #cd6a54; /* Sanftes Orange */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#bewerben .cta-btn:hover, #whatsapp .cta-btn:hover, #wiki .cta-btn:hover {
+    background-color: #065b65; /* Dunkles Türkis beim Hover */
+}
+
+@media (max-width: 768px) {
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .image-gallery img {
+        width: 100%;
+    }
+}
+
+.text-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Schwarzer Hintergrund mit Transparenz */
+    padding: 20px;
+    border-radius: 15px;
+    color: white; /* Weißer Text für besseren Kontrast */
+    max-width: 800px;
+    margin: 0 auto; /* Zentriert die Box */
+    text-align: center;
+}
+
+.text-box h2 {
+    color: #cd6a54; /* Sanftes Orange */
+    margin-bottom: 15px;
+}
+
+.text-box p {
+    line-height: 1.6;
+}
+
+.text-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Schwarzer Hintergrund mit Transparenz */
+    padding: 20px;
+    border-radius: 15px;
+    color: white; /* Weißer Text für besseren Kontrast */
+    max-width: 800px;
+    margin: 0 auto; /* Zentriert die Box */
+    text-align: center;
+}
+
+.text-box h2 {
+    color: #cd6a54; /* Sanftes Orange */
+    margin-bottom: 15px;
+}
+
+.text-box p {
+    line-height: 1.6;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto; /* Bewahrt die Proportionen */
+    display: block; /* Entfernt unnötigen Leerraum */
+    margin: 0 auto; /* Zentriert das Bild innerhalb des Containers */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Test */
+img {
+    border-radius: 15px; /* Hier kannst du die Rundung anpassen */
+    overflow: hidden; /* Verhindert, dass Inhalte über die Rundung hinausragen */
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center; /* Zentriert die Mitglieder */
+    gap: 30px; /* Abstand zwischen den Teammitgliedern */
+    flex-wrap: wrap; /* Zeilenumbruch für kleinere Bildschirme */
+    margin-top: 20px;
+}
+
+.member {
+    text-align: center; /* Zentriert den Text unter jedem Bild */
+    max-width: 200px; /* Maximale Breite pro Mitglied */
+    background-color: rgba(0, 0, 0, 0.1); /* Dezenter Hintergrund */
+    border-radius: 10px; /* Abgerundete Ecken */
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Schatten */
+}
+
+.member img {
+    width: 100%; /* Passt das Bild an die maximale Breite des Containers an */
+    border-radius: 50%; /* Runde Bilder */
+    margin-bottom: 10px;
+}
+
+.member h3 {
+    color: #065b65; /* Dunkles Türkis für die Namen */
+    margin-top: 10px;
+}
+
+.member p {
+    color: white; /* Standardfarbe für den Text */
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column; /* Mitglieder untereinander anordnen */
+        align-items: center; /* Zentriere die Inhalte */
+    }
+
+    .member {
+        max-width: 90%; /* Reduziert die Breite auf kleineren Bildschirmen */
+    }
+}
